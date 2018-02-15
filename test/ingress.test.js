@@ -40,13 +40,15 @@ describe('mesh ingress', function() {
           pin: 'a:1',
           discover: test_discover,
           nodeMetadata: {
-            ingress: [
-              {
-                path: '/test',
-                method: 'POST',
-                pattern: 'cmd:test,val:{qsValue}'
-              }
-            ]
+            ingress: {
+              routes: [
+                {
+                  path: '/test',
+                  method: 'POST',
+                  pattern: 'cmd:test,val:{query.val1}'
+                }
+              ]
+            }
           }
         })
       })
