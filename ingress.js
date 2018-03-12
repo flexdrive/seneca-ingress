@@ -8,7 +8,12 @@ function ingress() {
       ? msg.config.nodeMetadata.ingress
       : null
     if (ingressConfig) {
-      this.act('role:ingress,cmd:add', { ingress: ingressConfig })
+      this.act(
+        'role:ingress,cmd:add,$default:{ok:false,message:"pattern not found"}',
+        {
+          ingress: ingressConfig
+        }
+      )
     }
   })
 }
