@@ -1,28 +1,20 @@
 {
-  "name": "seneca-ingress",
-  "version": "1.0.0",
+  "name": "@flexdrive/seneca-ingress",
+  "version": "0.1.0",
   "description": "",
   "main": "ingress.js",
   "scripts": {
     "test": "lab test/*.test.js -r console -L -t 80 -c -v"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flexdrive/seneca-ingress.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/flexdrive/seneca-ingress/issues"
-  },
-  "homepage": "https://github.com/flexdrive/seneca-ingress#readme",
   "devDependencies": {
     "assert": "^1.4.1",
     "code": "^5.1.2",
     "lab": "^15.2.1",
     "seneca": "^3.4.3",
     "seneca-balance-client": "^0.6.1",
-    "seneca-mesh": "git://github.com/flexdrive/seneca-mesh"
+    "@flexdrive/seneca-mesh": "^0.1.0"
   }
 }
