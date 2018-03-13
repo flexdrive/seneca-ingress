@@ -20,3 +20,5 @@ nodeMetadata: {
 ```
 
 Pattern placeholders can be used for `params`, `query`, and `payload`.
+
+**Include as a plugin only in a gateway.**
